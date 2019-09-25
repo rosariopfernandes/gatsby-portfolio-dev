@@ -1,24 +1,20 @@
 import React from 'react'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
-import { Container, Button } from 'Common'
+import { Container } from 'Common'
 import dev from 'Static/illustrations/skills.svg'
 import { Wrapper, SkillsWrapper, Details, Thumbnail } from './styles'
 
 export const Skills = () => (
-	<Wrapper id="about">
+	<Wrapper id="submit">
 		<SkillsWrapper as={Container}>
 			<Thumbnail>
-				<img src={dev} alt="I’m John and I’m a Backend & Devops engineer!" />
+				<img src={dev} alt="Submit your Project!" />
 			</Thumbnail>
 			<Details>
-				<h1>Hi There!</h1>
+				<h1>Submit your Project!</h1>
 				<p>
-					Lorem Ipsum is simply dummy text of the printing and typesetting
-					industry. Lorem Ipsum has been the industry’s standard dummy.
+					Would you like to see your Open Source Project featured here?
+					See our <a href="https://github.com/mozdevz/repos">Guide</a> to learn how to submit a project.
 				</p>
-				<Button as={AnchorLink} href="#contact">
-					Hire me
-				</Button>
 			</Details>
 		</SkillsWrapper>
 	</Wrapper>
